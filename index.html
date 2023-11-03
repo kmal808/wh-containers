@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>WH Warehouse</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/bulmaswatch/default/bulmaswatch.min.css" />
+		<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css"> -->
+		<script
+			src="https://kit.fontawesome.com/996b16cea2.js"
+			crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="section">
+			<div class="card has-background-grey-light">
+				<p class="title is-family-code has-text-weight-bold">
+					Container 🚢🚢 Offload 🏴‍☠️ ⚓️ List
+				</p>
+				<div></div>
+				<p class="subtitle is-family-code has-text-weight-semibold">
+					Definetly Not 👎 a Manifest 🙅‍♂️
+				</p>
+				<form id="can-info-form" class="form">
+					<div class="field">
+						<label class="label" for="container-number">Container Number</label>
+						<div class="control has-icons-left">
+							<input
+								class="input"
+								type="text"
+								id="container-number"
+								placeholder="MATU-STFUxxx" />
+							<span class="icon is-small is-left">
+								<i class="fas fa-anchor"></i>
+							</span>
+						</div>
+					</div>
+					<div class="field">
+						<label class="label" for="booking-number">Booking Number</label>
+						<div class="control has-icons-left">
+							<input
+								class="input"
+								type="number"
+								id="booking-number"
+								placeholder="4206969" />
+							<span class="icon is-small is-left">
+								<i class="fas fa-book-atlas"></i>
+							</span>
+						</div>
+					</div>
+					<div class="field">
+						<label class="label" for="date">Date</label>
+						<div class="control has-icons-left">
+							<input class="input" type="date" id="date" />
+							<span class="icon is-small is-left">
+								<i class="fas fa-calendar"></i>
+							</span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="section">
+			<div class="card has-background-grey-light">
+				<form id="inventoryForm" class="form">
+					<div class="field">
+						<label class="label" for="job-number">Job Number</label>
+						<div class="control has-icons-left">
+							<input
+								class="input"
+								type="number"
+								id="job-number"
+								placeholder="42069" />
+							<span class="icon is-small is-left">
+								<i class="fas fa-hashtag"></i>
+							</span>
+						</div>
+					</div>
+					<div class="field">
+						<label class="label" for="customer-name">Job Name</label>
+						<div class="control has-icons-left">
+							<input
+								class="input"
+								type="text"
+								id="customer-name"
+								placeholder="Last name ever, first name greatest. Like a sprained ankle boy, I ain't nothing to play with" />
+							<span class="icon is-small is-left">
+								<i class="fas fa-user"></i>
+							</span>
+						</div>
+					</div>
+					<div class="field">
+						<label class="label" for="quantity">Quantity</label>
+						<div class="control has-icons-left">
+							<input
+								class="input"
+								type="number"
+								id="quantity"
+								placeholder="665.5 not quite evil" />
+							<span class="icon is-small is-left">
+								<i class="fas fa-hashtag"></i>
+							</span>
+						</div>
+					</div>
+					<div class="field">
+						<label class="label" for="manufacturer">Manufacturer</label>
+						<div class="control has-icons-left">
+							<input
+								class="input"
+								type="text"
+								id="manufacturer"
+								placeholder="Vendor / Manufacturer" />
+							<span class="icon is-small is-left">
+								<i class="fas fa-industry"></i>
+							</span>
+						</div>
+					</div>
+					<div class="field">
+						<label class="label" for="description">Config or description</label>
+						<div class="control has-icons-left">
+							<input
+								class="input"
+								type="text"
+								id="description"
+								placeholder="Bronze chingamadero" />
+							<span class="icon is-small is-left">
+								<i class="fas fa-database"></i>
+							</span>
+						</div>
+					</div>
+					<div class="field">
+						<label class="label" for="order-number">Order Number</label>
+						<div class="control has-icons-left">
+							<input
+								class="input"
+								type="number"
+								id="order-number"
+								placeholder="696969" />
+							<span class="icon is-small is-left">
+								<i class="fas fa-hashtag"></i>
+							</span>
+						</div>
+					</div>
+					<div class="field">
+						<label class="label" for="notes">Additional Notes</label>
+						<div class="control has-icons-left">
+							<textarea
+								class="textarea"
+								id="notes"
+								rows="10"
+								cols="33"
+								placeholder="Can't find my mommy'">
+							</textarea>
+							<span class="icon is-small is-left">
+								<i class="fas fa-sticky-note"></i>
+							</span>
+						</div>
+					</div>
+					<div class="field">
+						<div class="buttons are-normal is-centered">
+							<!-- <div class="columns is-variable is-3"> -->
+							<button
+								class="button is-dark column"
+								type="button"
+								onclick="addEntryToTable()">
+								Add to Table
+							</button>
+							<button
+								class="button is-dark column"
+								type="button"
+								onclick="downloadPDF()">
+								Save as PDF
+							</button>
+							<button
+								class="button is-dark column"
+								type="button"
+								onclick="downloadCSV()">
+								Save as CSV
+							</button>
+							<button
+								class="button is-dark column"
+								type="button"
+								onclick="clearForm()">
+								Clear Table
+							</button>
+							<button
+								class="button is-dark column"
+								type="button"
+								onclick="window.print('table')">
+								Print
+							</button>
+							<!-- </div> -->
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="section">
+			<div class="card table-container">
+				<header class="card-header">
+					<p class="card-header-title">
+						Container Inventory List For <span class="currentDate"></span>
+					</p>
+					<p id="tableDate"></p>
+				</header>
+				<table id="entries-table" class="table is-bordered is-striped">
+					<thead>
+						<tr>
+							<th>Job Number</th>
+							<th>Customer Name</th>
+							<th>Quantity</th>
+							<th>Manufacturer</th>
+							<th>Description</th>
+							<th>Order Number</th>
+							<th>Notes</th>
+						</tr>
+					</thead>
+					<tbody id="entries-table-body"></tbody>
+				</table>
+			</div>
+		</div>
+	</body>
+
+	<script src="scripts.js"></script>
+</html>
