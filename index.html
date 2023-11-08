@@ -23,141 +23,152 @@
 				<p class="subtitle is-family-code has-text-weight-semibold">
 					Definetly Not 👎 a Manifest 🙅‍♂️
 				</p>
-				<form id="can-info-form" class="form">
-					<div class="field">
-						<label class="label" for="container-number">Container Number</label>
-						<div class="control has-icons-left">
-							<input
+			</div>
+		</div>
+		<div class="section">
+			<div class="card m-2 has-background-grey-light">
+				<form id="inventoryForm" class="form">
+					<div class="columns">
+						<div class="field column">
+							<label class="label" for="date">Offload Date</label>
+							<div class="control has-icons-left">
+								<input class="input" type="date" id="date" />
+								<span class="icon is-small is-left">
+									<i class="fas fa-calendar"></i>
+								</span>
+							</div>
+						</div>
+						<div class="field column">
+							<label class="label" for="container-number">Container Number</label>
+							<div class="control has-icons-left">
+								<input
 								class="input"
 								type="text"
 								id="container-number"
 								placeholder="MATU-STFUxxx" />
-							<span class="icon is-small is-left">
+								<span class="icon is-small is-left">
 								<i class="fas fa-anchor"></i>
-							</span>
+								</span>
+							</div>
 						</div>
 					</div>
-					<div class="field">
-						<label class="label" for="booking-number">Booking Number</label>
-						<div class="control has-icons-left">
-							<input
-								class="input"
-								type="number"
-								id="booking-number"
-								placeholder="4206969" />
-							<span class="icon is-small is-left">
-								<i class="fas fa-book-atlas"></i>
-							</span>
+					<div class="columns">
+						<div class="field column">
+							<label class="label" for="booking-number">Booking Number</label>
+							<div class="control has-icons-left">
+								<input
+									class="input"
+									type="number"
+									id="booking-number"
+									placeholder="4206969" />
+								<span class="icon is-small is-left">
+									<i class="fas fa-book-atlas"></i>
+								</span>
+							</div>
+						</div>
+						<div class="field column">
+							<label class="label" for="job-number">Job Number</label>
+							<div class="control has-icons-left">
+								<input
+									class="input"
+									type="number"
+									id="job-number"
+									placeholder="42069" />
+								<span class="icon is-small is-left">
+									<i class="fas fa-hashtag"></i>
+								</span>
+							</div>
 						</div>
 					</div>
-					<div class="field">
-						<label class="label" for="date">Date</label>
-						<div class="control has-icons-left">
-							<input class="input" type="date" id="date" />
-							<span class="icon is-small is-left">
-								<i class="fas fa-calendar"></i>
-							</span>
+					<div class="columns">
+						<div class="field column">
+							<label class="label" for="customer-name">Job Name</label>
+							<div class="control has-icons-left">
+								<input
+									class="input"
+									type="text"
+									id="customer-name"
+									placeholder="Last name ever, first name greatest. Like a sprained ankle boy, I ain't nothing to play with" />
+								<span class="icon is-small is-left">
+									<i class="fas fa-user"></i>
+								</span>
+							</div>
+						</div>
+						<div class="field column">
+							<label class="label" for="quantity">Quantity</label>
+							<div class="control has-icons-left">
+								<input
+									class="input"
+									type="number"
+									id="quantity"
+									placeholder="665.5 not quite evil" />
+								<span class="icon is-small is-left">
+									<i class="fas fa-hashtag"></i>
+								</span>
+							</div>
 						</div>
 					</div>
-				</form>
-			</div>
-		</div>
-		<div class="section">
-			<div class="card has-background-grey-light">
-				<form id="inventoryForm" class="form">
-					<div class="field">
-						<label class="label" for="job-number">Job Number</label>
-						<div class="control has-icons-left">
-							<input
-								class="input"
-								type="number"
-								id="job-number"
-								placeholder="42069" />
-							<span class="icon is-small is-left">
-								<i class="fas fa-hashtag"></i>
-							</span>
+					<div class="columns">
+						<div class="field column">
+							<label class="label" for="manufacturer">Manufacturer</label>
+							<div class="control has-icons-left">
+								<input
+									class="input"
+									type="text"
+									id="manufacturer"
+									placeholder="Vendor / Manufacturer" />
+								<span class="icon is-small is-left">
+									<i class="fas fa-industry"></i>
+								</span>
+							</div>
+						</div>
+						<div class="field column">
+							<label class="label" for="order-number">Order Number</label>
+							<div class="control has-icons-left">
+								<input
+									class="input"
+									type="number"
+									id="order-number"
+									placeholder="696969" />
+								<span class="icon is-small is-left">
+									<i class="fas fa-hashtag"></i>
+								</span>
+							</div>
 						</div>
 					</div>
-					<div class="field">
-						<label class="label" for="customer-name">Job Name</label>
-						<div class="control has-icons-left">
-							<input
-								class="input"
-								type="text"
-								id="customer-name"
-								placeholder="Last name ever, first name greatest. Like a sprained ankle boy, I ain't nothing to play with" />
-							<span class="icon is-small is-left">
-								<i class="fas fa-user"></i>
-							</span>
+					<div class="columns">
+						<div class="field column">
+							<label class="label" for="description">Config or description</label>
+							<div class="control has-icons-left">
+								<textarea
+									class="textarea"
+									id="description"
+									rows="8"
+									cols="33"
+									placeholder="Bronze chingamadero" >
+								</textarea>
+								<span class="icon is-small is-left">
+									<i class="fas fa-database"></i>
+								</span>
+							</div>
+						</div>
+						<div class="field column">
+							<label class="label" for="notes">Additional Notes</label>
+							<div class="control has-icons-left">
+								<textarea
+									class="textarea"
+									id="notes"
+									rows="8"
+									cols="33"
+									placeholder="Can't find my mommy'">
+								</textarea>
+								<span class="icon is-small is-left">
+									<i class="fas fa-sticky-note"></i>
+								</span>
+							</div>
 						</div>
 					</div>
-					<div class="field">
-						<label class="label" for="quantity">Quantity</label>
-						<div class="control has-icons-left">
-							<input
-								class="input"
-								type="number"
-								id="quantity"
-								placeholder="665.5 not quite evil" />
-							<span class="icon is-small is-left">
-								<i class="fas fa-hashtag"></i>
-							</span>
-						</div>
-					</div>
-					<div class="field">
-						<label class="label" for="manufacturer">Manufacturer</label>
-						<div class="control has-icons-left">
-							<input
-								class="input"
-								type="text"
-								id="manufacturer"
-								placeholder="Vendor / Manufacturer" />
-							<span class="icon is-small is-left">
-								<i class="fas fa-industry"></i>
-							</span>
-						</div>
-					</div>
-					<div class="field">
-						<label class="label" for="description">Config or description</label>
-						<div class="control has-icons-left">
-							<input
-								class="input"
-								type="text"
-								id="description"
-								placeholder="Bronze chingamadero" />
-							<span class="icon is-small is-left">
-								<i class="fas fa-database"></i>
-							</span>
-						</div>
-					</div>
-					<div class="field">
-						<label class="label" for="order-number">Order Number</label>
-						<div class="control has-icons-left">
-							<input
-								class="input"
-								type="number"
-								id="order-number"
-								placeholder="696969" />
-							<span class="icon is-small is-left">
-								<i class="fas fa-hashtag"></i>
-							</span>
-						</div>
-					</div>
-					<div class="field">
-						<label class="label" for="notes">Additional Notes</label>
-						<div class="control has-icons-left">
-							<textarea
-								class="textarea"
-								id="notes"
-								rows="10"
-								cols="33"
-								placeholder="Can't find my mommy'">
-							</textarea>
-							<span class="icon is-small is-left">
-								<i class="fas fa-sticky-note"></i>
-							</span>
-						</div>
-					</div>
+					
 					<div class="field">
 						<div class="buttons are-normal is-centered">
 							<!-- <div class="columns is-variable is-3"> -->
@@ -201,7 +212,7 @@
 			<div class="card table-container">
 				<header class="card-header">
 					<p class="card-header-title">
-						Container Inventory List For <span class="currentDate"></span>
+						Container Inventory List <span class="currentDate"></span>
 					</p>
 					<p id="tableDate"></p>
 				</header>

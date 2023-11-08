@@ -24,15 +24,12 @@ document
 	})
 
 function addEntryToTable() {
-	// Get the table's tbody element
 	const tbody = document
 		.getElementById('entries-table')
 		.getElementsByTagName('tbody')[0]
 
-	// Create a new row
 	const newRow = tbody.insertRow()
 
-	// Get form data
 	const jobNumber = document.getElementById('job-number').value
 	const customerName = document.getElementById('customer-name').value
 	const quantity = document.getElementById('quantity').value
@@ -41,15 +38,13 @@ function addEntryToTable() {
 	const orderNumber = document.getElementById('order-number').value
 	const notes = document.getElementById('notes').value
 
-	// Populate the row with form data
 	newRow.insertCell(0).innerText = jobNumber
 	newRow.insertCell(1).innerText = customerName
 	newRow.insertCell(2).innerText = quantity
 	newRow.insertCell(3).innerText = manufacturer
-	newRow.insertCell(5).innerText = description
-	newRow.insertCell(6).innerText = orderNumber
-	newRow.insertCell(7).innerText = notes
+	newRow.insertCell(4).innerText = description
+	newRow.insertCell(5).innerText = orderNumber
+	newRow.insertCell(6).innerText = notes
 
-	// Optionally, clear the form after adding the entry
 	document.getElementById('inventoryForm').reset()
 }
